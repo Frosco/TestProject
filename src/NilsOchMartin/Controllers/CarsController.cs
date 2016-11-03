@@ -24,7 +24,7 @@ namespace NilsOchMartin.Controllers
         public async Task<IActionResult> Index()
         {
             var viewModel = await context.GetAllCarsAsync();
-            return View(viewModel);
+            return View(viewModel2);
         }
 
         [HttpGet]
