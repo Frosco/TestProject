@@ -1,0 +1,12 @@
+﻿@model CarsIndexVM
+
+<tr>
+    @if (Model.ShowAsFast)
+    {
+        <td style="color:blueviolet">@Model.Brand</td>
+    }
+    else
+    {
+        <td>@Model.Brand</td>
+    }
+</tr>

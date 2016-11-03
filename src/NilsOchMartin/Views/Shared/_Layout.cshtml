@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    
+
+</head>
+<body>
+    <a asp-controller="Cars" asp-action="Create" style="padding:20px;">Add Car</a>
+    <a href="/cars/index" style="padding:20px;">Purchase Cars</a>
+    <a href="/home" style="padding:20px;">Home</a>
+
+    
+
+    <h1>@ViewBag.Title</h1>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <br />
+    <footer>Ich heiße Kartoffel &copy;</footer>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

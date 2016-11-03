@@ -1,0 +1,20 @@
+﻿@model CarsIndexVM[]
+@{
+    ViewBag.Title = "Home - Cars";
+}
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Cars</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+            @Html.Partial("_CarBoxVM", car);
+        }
+
+    </tbody>
+</table>
